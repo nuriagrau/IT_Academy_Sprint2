@@ -3,7 +3,7 @@
 -- -------------------------
 
 DROP DATABASE IF EXISTS `youTb`;
-CREATE DATABASE `youTb` DEFAULT CHARACTER SET utf8;
+CREATE DATABASE `youTb` DEFAULT CHARACTER SET utf8; -- CHARACTER SET utf8mb4;
 USE `youTb`;
 
 

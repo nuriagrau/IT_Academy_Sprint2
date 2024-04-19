@@ -1,4 +1,6 @@
 -- Base de dades Tienda
+-- Si us plau, efectua les següents consultes: 
+
 -- 1. Llista el nom de tots els productes que hi ha en la taula producto.
 SELECT nombre FROM tienda.producto;
 
