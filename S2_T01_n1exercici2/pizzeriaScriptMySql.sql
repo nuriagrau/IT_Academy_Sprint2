@@ -160,8 +160,8 @@ DEFAULT CHARACTER SET = utf8;
 CREATE TABLE IF NOT EXISTS `pizzeria`.`homeDelivery` (
   `idOrder` INT(11) NOT NULL,
   `deliveryGuy` INT(11) NULL DEFAULT NULL,
-  `status` ENUM("pending", "delivered", "cancelled") NULL DEFAULT NULL,
-`deliveryTime` DATETIME GENERATED ALWAYS AS (`status`="delivered"),
+  `status` ENUM("pending", "delivered", "cancelled") DEFAULT NULL,
+  `deliveryTime` DATETIME GENERATED ALWAYS AS (`status`="delivered"),
   PRIMARY KEY (`idOrder`),
   FOREIGN KEY (`idOrder`)
     REFERENCES `pizzeria`.`orders` (`orderId`)
