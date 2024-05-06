@@ -1,2 +1,0 @@
-db.createCollection('users', {validator: {$jsonSchema: {bsonType: 'object',title: 'users',required: ['name','email','password','birthDate','gender','country','postCode'],properties:{name:{bsonType: 'string'},email:{bsonType: 'string'},password:{bsonType: 'string'},birthDate:{bsonType: 'date'},gender:{enum: ["female", "male", "notRelevant"]},country:{bsonType: 'string'},postCode:{bsonType: 'string'},mySubscriptions:{
-  bsonType: 'array',items:{bsonType: 'objectId'}}}}}});
