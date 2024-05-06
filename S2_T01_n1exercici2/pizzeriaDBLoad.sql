@@ -32,16 +32,16 @@ INSERT INTO `towns` (`name`,`idCounty`) VALUES("Vitoria-Gasteiz", 01);
 -- INSERT INTO `customers` (`firstName`,`lastName`,`adress`,`postCode`,`idTown`,`idCounty`,`phone`) VALUES(`firstName`,`lastName`,`adress`,`postCode`,`idTown`,`idCounty`,`phone`)
 -- -----------------------------------------------------------------
 
-INSERT INTO `customers` (`firstName`,`lastName`,`adress`,`postCode`,`idTown`,`idCounty`,`phone`) VALUES("Letizia`","Creelman","082 Cardinal Way`","46025",1,46,"763-548-4195");
-INSERT INTO `customers` (`firstName`,`lastName`,`adress`,`postCode`,`idTown`,`idCounty`,`phone`) VALUES("Eirena","Lindstedt","6221 Cambridge Way","08190",2,08,"909-127-4066");
+INSERT INTO `customers` (`firstName`,`lastName`,`adress`,`postCode`,`idTown`,`phone`) VALUES("Letizia`","Creelman","082 Cardinal Way`","46025",1,"763-548-4195");
+INSERT INTO `customers` (`firstName`,`lastName`,`adress`,`postCode`,`idTown`,`phone`) VALUES("Eirena","Lindstedt","6221 Cambridge Way","08190",2,"909-127-4066");
 
 
 -- ---------------------------------------------------------------------------------------------------------------------------------------
 -- INSERT INTO `shops` (`adress`,`postCode`,`idTown`,`idCounty`) VALUES(`adress`,`postCode`,`idTown`,`idCounty`) VALUES;
 -- ---------------------------------------------------------------------------------------------------------------------------------------
 
-INSERT INTO `shops` (`adress`,`postCode`,`idTown`,`idCounty`) VALUES("11 Laurel Circle","46005",1,46);
-INSERT INTO `shops` (`adress`,`postCode`, `idTown`,`idCounty`) VALUES("7 Forest Dale Road","08190",2,08);
+INSERT INTO `shops` (`adress`,`postCode`,`idTown`) VALUES("11 Laurel Circle","46005",1);
+INSERT INTO `shops` (`adress`,`postCode`,`idTown`) VALUES("7 Forest Dale Road","08190",2);
 
 
 -- -----------------------------------------------------------------

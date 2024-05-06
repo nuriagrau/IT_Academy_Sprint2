@@ -29,15 +29,10 @@ CREATE TABLE IF NOT EXISTS `pizzeria`.`customers` (
   `adress` VARCHAR(80) NOT NULL,
   `postCode` VARCHAR(5) NOT NULL,
   `idTown` INT(11) NOT NULL,
-  `idCounty` INT(11) NOT NULL,
   `phone` VARCHAR(45) NULL DEFAULT NULL,
   PRIMARY KEY (`customerId`),
   FOREIGN KEY (`idTown`)
     REFERENCES `pizzeria`.`towns` (`townId`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  FOREIGN KEY (`idCounty`)
-    REFERENCES `pizzeria`.`counties` (`countyId`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
@@ -83,14 +78,9 @@ CREATE TABLE IF NOT EXISTS `pizzeria`.`shops` (
   `adress` VARCHAR(80) NOT NULL,
   `postCode` VARCHAR(5) NOT NULL,
   `Idtown` INT(11) NOT NULL,
-  `IdCounty` INT(11) NOT NULL,
   PRIMARY KEY (`shopId`),
   FOREIGN KEY (`Idtown`)
     REFERENCES `pizzeria`.`towns` (`townId`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  FOREIGN KEY (`IdCounty`)
-    REFERENCES `pizzeria`.`counties` (`countyId`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
