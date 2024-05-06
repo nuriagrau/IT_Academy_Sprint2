@@ -142,7 +142,7 @@ db.restaurant.find( {"address.coord": {$type: "double"}} );
 
 // 30. Escriu una consulta que seleccionarà el restaurant_id, name i grade per a aquells restaurants que retornin 0 com a resta després de dividir el marcador per 7.
 
-db.restaurant.find({'grades.score': {$mod: [7, 0]}}, {restaurant_id: 1, name: 1, 'grades': 1}
+db.restaurant.find({'grades.score': {$mod: [7, 0]}}, {_id: 0, restaurant_id: 1, name: 1, 'grades': 1}
  ).toArray();
 
 // 31. Escriu una consulta per trobar el name de restaurant, borough, longitud i altitud i cuisine per a aquells restaurants que contenen 'mon' com tres lletres en algun lloc del seu nom.
