@@ -1,0 +1,1 @@
+db.createCollection('playLists', {validator: {$jsonSchema: {bsonType: 'object',title: 'playLists',required: ['name','publishedBy','creationDate','state','idVideos'],properties:{name:{bsonType: 'string'},publishedBy:{bsonType: 'objectId'},creationDate:{bsonType: 'timestamp'},state:{enum: ["public", "private"]},idVideos:{bsonType: 'array',items:{title: 'object'}}}}}});

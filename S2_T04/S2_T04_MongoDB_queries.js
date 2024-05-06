@@ -49,13 +49,6 @@ db.restaurant.find({"grades.score": {$gt: 90}});
 
 // 9. Escriu una consulta per trobar els restaurants que tenen un score de més de 80 però menys que 100.
 
-//NO FUNCIONA BE SURT 131
-
-db.restaurant.find( {"grades.score": {$gte: 80, $lte: 100} } );
-
-db.restaurant.find( { $and: [ {"grades.score": {$gte: 80}}, {"grades.score": {$lte: 100} }]} );
-
-// SI FILTRA NO GREATER THAN
 db.restaurant.find({grades: {$elemMatch: {score: {$gt: 80, $lt:100}}}});
 
 // 10. Escriu una consulta per trobar els restaurants que es localitzen en valor de latitud menys de -95.754168.
