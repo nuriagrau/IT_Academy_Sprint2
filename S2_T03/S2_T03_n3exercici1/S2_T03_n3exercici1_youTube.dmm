@@ -8,22 +8,6 @@
 			"estimatedSize": "",
 			"cols": [
 				{
-					"id": "f3e2f9d2-ce29-4c1a-9561-21188d2c0355",
-					"name": "_id",
-					"datatype": "objectId",
-					"param": "",
-					"pk": true,
-					"nn": true,
-					"list": false,
-					"comment": "",
-					"data": "",
-					"enum": "",
-					"validation": "",
-					"pattern": false,
-					"estimatedSize": "",
-					"any": ""
-				},
-				{
 					"id": "77dc5f53-5c2e-4ea1-97e2-94669f65f099",
 					"name": "idUser",
 					"datatype": "objectId",
@@ -85,12 +69,7 @@
 					"id": "7d9976f7-4537-4ec9-8da1-1b10e566ef67",
 					"name": "Primary",
 					"isPk": true,
-					"cols": [
-						{
-							"id": "a74d9cc7-ef7f-4456-a308-9a6768eb766a",
-							"colid": "f3e2f9d2-ce29-4c1a-9561-21188d2c0355"
-						}
-					]
+					"cols": []
 				},
 				{
 					"id": "5b02ba56-9d79-4c09-97b6-07d818edaee3",
@@ -149,6 +128,22 @@
 			"desc": "",
 			"estimatedSize": "",
 			"cols": [
+				{
+					"id": "9db345a2-cedc-407f-bf33-0ee60b6456f5",
+					"name": "_id",
+					"datatype": "objectId",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"data": "",
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"estimatedSize": "",
+					"any": ""
+				},
 				{
 					"id": "fd8f8322-b376-40fe-b7a7-570798dea6c3",
 					"name": "name",
@@ -238,7 +233,12 @@
 					"id": "0f03353c-dad7-47dd-96d7-8ea31c4fa4bf",
 					"name": "Primary",
 					"isPk": true,
-					"cols": []
+					"cols": [
+						{
+							"id": "3b1c006e-956e-4937-92a6-e73f869df3c0",
+							"colid": "9db345a2-cedc-407f-bf33-0ee60b6456f5"
+						}
+					]
 				},
 				{
 					"id": "c2239279-ae34-4c64-8691-d7f134a5c366",
@@ -1237,7 +1237,7 @@
 		"def_collation": "",
 		"def_others": "",
 		"connectionVersion": "",
-		"lastSaved": 1714906775779
+		"lastSaved": 1715076844175
 	},
 	"otherObjects": {},
 	"diagrams": {
@@ -1257,7 +1257,7 @@
 					"referencedItemId": "a851897d-fbfc-4cf2-a8d6-32024391083d",
 					"x": 956,
 					"y": 182,
-					"gHeight": 99,
+					"gHeight": 81,
 					"gWidth": 276,
 					"color": "#ffffff",
 					"background": "#ffeb3b",
@@ -1269,7 +1269,7 @@
 				"973b988c-af63-4a8c-8f1b-88abf2ea3a27": {
 					"referencedItemId": "973b988c-af63-4a8c-8f1b-88abf2ea3a27",
 					"x": 45,
-					"y": 135,
+					"y": 172,
 					"gHeight": 712,
 					"gWidth": 245,
 					"color": "#ffffff",
